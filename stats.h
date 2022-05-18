@@ -1,5 +1,7 @@
+#ifndef STATS_H
+#define STATS_H
 
-struct stats{
+struct Stats {
   int average;
   int max;
   int min;
@@ -11,3 +13,4 @@ void check_and_alert(float maxThreshold, alerter_funcptr alerters[], struct Stat
 
 extern int emailAlertCallCount;
 extern int ledAlertCallCount;
+#endif
