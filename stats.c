@@ -49,10 +49,10 @@ struct Stats compute_statistics(const float* numberset, int setlength) {
   return s;
 }
 
-int emailAlertCallCount = 0;
-int ledAlertCallCount = 0;
+volatile int emailAlertCallCount = 0;
+volatile int ledAlertCallCount = 0;
 
 void check_and_alert(float maxThreshold, alerter_funcptr alerters[], struct Stats computedStats) {
-  *alerters[0];
-  *alerters[1];
+  alerters[0];
+  alerters[1];
 }

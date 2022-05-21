@@ -1,4 +1,5 @@
 #include "emailAlerter.h"
+#include <stdio.h>
 
 void emailAlerter() {
     emailAlertCallCount++;
