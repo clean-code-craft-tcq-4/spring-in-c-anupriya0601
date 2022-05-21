@@ -2,9 +2,9 @@
 #define STATS_H
 
 struct Stats {
-  int average;
-  int max;
-  int min;
+  float average;
+  float max;
+  float min;
 };
 struct Stats compute_statistics(const float* numberset, int setlength);
 
