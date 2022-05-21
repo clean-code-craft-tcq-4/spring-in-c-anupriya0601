@@ -2,4 +2,5 @@
 
 void emailAlerter() {
     emailAlertCallCount++;
+    printf("emailAlertCallCount: %d",emailAlertCallCount);
 }

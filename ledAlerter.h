@@ -1,7 +1,7 @@
 #ifndef LEDALERTER_H
 #define LEDALERTER_H
 
-extern int ledAlertCallCount;
+volatile extern int ledAlertCallCount;
 
 void ledAlerter();
 
