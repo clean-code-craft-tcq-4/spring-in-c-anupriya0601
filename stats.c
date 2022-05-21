@@ -40,7 +40,12 @@ struct Stats compute_statistics(const float* numberset, int setlength) {
         else if (numberset[i] <  s.min)     
           s.min = numberset[i];
       }
-    }    
+    }  
+    else
+    {
+      s.max = s.max/setlength;
+      s.min = s.min/setlength;
+    }  
   return s;
 }
 
